@@ -30,11 +30,11 @@ cs_add_library(my_traj src/my_traj.cpp)
 
 # Executables: uncomment the following and edit arguments to compile new nodes
 # may add more of these lines for more nodes from the same package
-cs_add_executable(my_mobot_pub_des_state src/pub_des_state_main.cpp src/pub_des_state.cpp)
-cs_add_executable(my_open_loop_controller src/open_loop_controller.cpp)
-cs_add_executable(my_pub_des_state_path_client src/pub_des_state_path_client.cpp)
-cs_add_executable(my_mobot_lidar_alarm src/lidar_alarm.cpp)
-cs_add_executable(my_mobot_lidar_detecting src/lidar_detecting.cpp)
+cs_add_executable(my_mobot_pub_des_state pub_des_state_main.cpp pub_des_state.cpp)
+cs_add_executable(my_open_loop_controller open_loop_controller.cpp)
+cs_add_executable(my_pub_des_state_path_client pub_des_state_path_client.cpp)
+cs_add_executable(my_mobot_lidar_alarm lidar_alarm.cpp)
+cs_add_executable(my_mobot_lidar_detecting lidar_detecting.cpp)
 #the following is required, if desire to link a node in this package with a library created in this same package
 # edit the arguments to reference the named node and named library within this package
 # target_link_library(example my_lib)
